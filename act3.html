@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS operators</title>
+    <style>
+     .calculator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 50px;
+            background-color: lightgoldenrodyellow;
+            width:500px;
+            border : 3px solid;
+            padding:1rem;
+            margin:0 auto;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+          <h1 style="text-align: center;">My Calulator</h1>
+    <div class='calculator'>
+
+    <input type="text" id="a">
+    <input type="text" id="b">
+
+     <button onclick="result.value = eval(a.value + '+' + b.value)">Add</button> <br><br>
+        <button onclick="result.value = eval(a.value + '-' + b.value)">SUBTRACT</button> <br><br>
+        <button onclick="result.value = eval(a.value + '*' + b.value)">MULTIPLY</button> <br><br>
+        <button onclick="result.value = eval(a.value + '/' + b.value)">DIVIDE</button> <br><br>
+     <input type="text" id="result" placeholder="Result">
+    </div>
+
+</body>
+</html>

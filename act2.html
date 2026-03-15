@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statements & variables</title>
+    <style>
+        .result{
+            max-width: fit-content;
+            padding: 1rem;
+            border: 3px dotted;
+            background: green;
+            color: yellow;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        var x = 5;
+        var y = 10;
+        var z = x + y;
+        document.getElementById("demo").innerHTML = z;
+         document.getElementById("demo2").innerHTML = "the square of z is:" + z * z;
+         document.getElementById("demo").classList.add('result');
+          document.getElementById("demo2").classList.add('result');
+    </script>
+</body>
+</html>
